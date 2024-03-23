@@ -10,10 +10,13 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "lightgallery": "^2.7.2",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-leaflet": "^4.2.1",
     "react-router-dom": "^6.22.3",
-    "remixicon": "^4.2.0"
+    "remixicon": "^4.2.0",
+    "swiper": "^11.0.7"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

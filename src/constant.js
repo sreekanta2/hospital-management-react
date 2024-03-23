@@ -19,35 +19,28 @@ export const links = [
     sublinks: [
       {
         name: "Dashboard",
-        href: "/doctor-dashboard/dashboard/upcoming-patient",
+        href: "/doctor/dashboard",
       },
       {
         name: "Appointments",
-        href: "/doctor-dashboard/appointments",
+        href: "/doctor/appointments",
       },
       {
         name: "My Patients",
-        href: "/doctor-dashboard/patients",
+        href: "/doctor/patients",
       },
       {
         name: "Schedule Timings",
-        href: "/doctor-dashboard/schedule",
+        href: "/doctor/schedule",
       },
-      {
-        name: "Available Timing",
-        href: "/doctor-dashboard/available-timing",
-      },
-      {
-        name: "Invoice",
-        href: "/doctor-dashboard/invoice",
-      },
+
       {
         name: "Accounts",
-        href: "/doctor-dashboard/accounts",
+        href: "/doctor/accounts",
       },
       {
         name: "Reviews",
-        href: "/doctor-dashboard/reviews",
+        href: "/doctor/reviews",
       },
       {
         name: "Messages",
@@ -55,15 +48,15 @@ export const links = [
       },
       {
         name: "Profile Setting",
-        href: "/doctor-dashboard/profile-setting",
+        href: "/doctor/profile-setting",
       },
       {
         name: "Social Media",
-        href: "/doctor-dashboard/social-media",
+        href: "/doctor/social-media",
       },
       {
         name: "Change Password",
-        href: "/doctor-dashboard/change-password",
+        href: "/doctor/change-password",
       },
       {
         name: "Logout",
@@ -77,16 +70,13 @@ export const links = [
     sublinks: [
       {
         name: "Dashboard",
-        href: "/patient/patient-dashboard",
+        href: "/patient/dashboard",
       },
       {
         name: "Favorite",
         href: "/patient/favorite",
       },
-      {
-        name: "Dependent",
-        href: "/patient/patient-dependent",
-      },
+
       {
         name: "Messages",
         href: "/conversation",
@@ -103,10 +93,7 @@ export const links = [
         name: "Add Medical Records",
         href: "/patient/patient-add-medical-records",
       },
-      {
-        name: "Medical Details",
-        href: "/patient/patient-medical-details",
-      },
+
       {
         name: "Profile Setting",
         href: "/patient/patient-profile-setting",
@@ -175,35 +162,28 @@ export const links = [
 export const doctorSidebarOptions = [
   {
     name: "Dashboard",
-    href: "/doctor-dashboard/dashboard/upcoming-patient",
+    href: "/doctor/dashboard",
   },
   {
     name: "Appointments",
-    href: "/doctor-dashboard/appointments",
+    href: "/doctor/appointments",
   },
   {
     name: "My Patients",
-    href: "/doctor-dashboard/patients",
+    href: "/doctor/patients",
   },
   {
     name: "Schedule Timings",
-    href: "/doctor-dashboard/schedule",
+    href: "/doctor/schedule",
   },
-  {
-    name: "Available Timing",
-    href: "/doctor-dashboard/available-timing",
-  },
-  {
-    name: "Invoice",
-    href: "/doctor-dashboard/invoice",
-  },
+
   {
     name: "Accounts",
-    href: "/doctor-dashboard/accounts",
+    href: "/doctor/accounts",
   },
   {
     name: "Reviews",
-    href: "/doctor-dashboard/reviews",
+    href: "/doctor/reviews",
   },
   {
     name: "Messages",
@@ -211,15 +191,15 @@ export const doctorSidebarOptions = [
   },
   {
     name: "Profile Setting",
-    href: "/doctor-dashboard/profile-setting",
+    href: "/doctor/profile-setting",
   },
   {
     name: "Social Media",
-    href: "/doctor-dashboard/social-media",
+    href: "/doctor/social-media",
   },
   {
     name: "Change Password",
-    href: "/doctor-dashboard/change-password",
+    href: "/doctor/change-password",
   },
   {
     name: "Logout",
@@ -229,16 +209,9 @@ export const doctorSidebarOptions = [
 export const patientSidebarOptions = [
   {
     name: "Dashboard",
-    href: "/patient/patient-dashboard",
+    href: "/patient/dashboard",
   },
-  {
-    name: "Favorite",
-    href: "/patient/favorite",
-  },
-  {
-    name: "Dependent",
-    href: "/patient/patient-dependent",
-  },
+
   {
     name: "Messages",
     href: "/conversation",
@@ -322,9 +295,9 @@ export const experience = ["1-5years", "5+years"];
 //   },
 // ];
 
-// export const startEndTimeOptions = [
-//   { label: "12.00 AM", value: "12.00 AM" },
-//   { label: "12.30 PM", value: "12.30 PM" },
-//   { label: "1.00 PM", value: "1.00 PM" },
-//   { label: "12.00 AM", value: "12.00 AM" },
-// ];
+export const startEndTimeOptions = [
+  { label: "12.00 AM", value: "12.00 AM" },
+  { label: "12.30 PM", value: "12.30 PM" },
+  { label: "1.00 PM", value: "1.00 PM" },
+  { label: "12.00 AM", value: "12.00 AM" },
+];
