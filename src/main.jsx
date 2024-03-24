@@ -40,6 +40,15 @@ import Overview from "./components/Doctor/singleDoctor/Overview";
 import SingleDoctor from "./components/Doctor/singleDoctor/SingleDoctor";
 import Conversation from "./page/Conversation";
 
+import PatientAccount from "./components/Patient/Account/Account";
+import BookingDoctor from "./components/Patient/Account/BookingDoctors/BookingDoctors";
+import AddMedicalRecords from "./components/Patient/AddMedicalRecords/AddMedicalRecords";
+import Order from "./components/Patient/Order/Order";
+import Appointment from "./components/Patient/dashboard/Appointments/Appointment";
+import Billing from "./components/Patient/dashboard/Billings/Billing";
+import Dashborad from "./components/Patient/dashboard/Dashborad";
+import MedicalRecords from "./components/Patient/dashboard/MedicalRecords/MedicalRecords";
+import Prescription from "./components/Patient/dashboard/Prescriptions/Prescriptions";
 import Doctor from "./page/DoctorDashboard";
 import Doctors from "./page/Doctors";
 import Home from "./page/Home";
@@ -89,7 +98,38 @@ const router = createBrowserRouter(
         <Route path="/doctor/social-media" element={<SocialMedia />} />
         <Route path="/doctor/change-password" element={<ChangePassword />} />
       </Route>
-      <Route path="/patient/dashboard" element={<Patient />} />
+      <Route path="/patient" element={<Patient />}>
+        <Route path="/patient/dashboard" element={<Dashborad />}>
+          <Route
+            path="/patient/dashboard/appointment"
+            element={<Appointment />}
+          />
+          <Route
+            path="/patient/dashboard/prescription"
+            element={<Prescription />}
+          />
+          <Route
+            path="/patient/dashboard/medical-records"
+            element={<MedicalRecords />}
+          />
+          <Route path="/patient/dashboard/billing" element={<Billing />} />
+        </Route>
+        <Route path="/patient/account" element={<PatientAccount />}>
+          <Route
+            path="/patient/account/booking-doctor"
+            element={<BookingDoctor />}
+          />
+          <Route
+            path="/patient/account/request-doctor"
+            element={<BookingDoctor />}
+          />
+        </Route>
+        <Route path="/patient/order" element={<Order />} />
+        <Route
+          path="/patient/addmedical-record"
+          element={<AddMedicalRecords />}
+        />
+      </Route>
       <Route path="/doctor-search" element={<DoctorSearch />} />
       <Route path="/doctor/:doctorId" element={<SingleDoctor />}>
         <Route path="/doctor/:doctorId/overview" element={<Overview />} />

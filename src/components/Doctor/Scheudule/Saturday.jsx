@@ -46,17 +46,15 @@ export default function Saturday() {
       <div className="flex flex-wrap gap-2">
         {timeSlots.length > 0 &&
           timeSlots.map((item, index) => (
-            <>
-              <p
-                className=" px-4 py-2 bg-[#d43f3a] rounded-md text-white"
-                key={index}
-              >
-                10.00 am -5.00 pm
-                <span className="px-4 text-gray-400 hover:text-white cursor-pointer">
-                  X
-                </span>
-              </p>
-            </>
+            <p
+              className=" px-4 py-2 bg-[#d43f3a] rounded-md text-white"
+              key={index}
+            >
+              10.00 am -5.00 pm
+              <span className="px-4 text-gray-400 hover:text-white cursor-pointer">
+                X
+              </span>
+            </p>
           ))}
         <ScheduleModal control={control} open={open} />
       </div>

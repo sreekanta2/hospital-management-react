@@ -218,16 +218,16 @@ export const patientSidebarOptions = [
   },
   {
     name: "Account",
-    href: "/patient/patient-account",
+    href: "/patient/account",
   },
   {
     name: "Order",
-    href: "/patient/patient-order",
+    href: "/patient/order",
   },
 
   {
     name: "Add Medical Records",
-    href: "/patient/patient-add-medical-records/medical-recods",
+    href: "/patient/addmedical-record",
   },
   {
     name: "Medical Details",
@@ -250,6 +250,34 @@ export const patientSidebarOptions = [
 
 export const speciality = ["Neurology", "Ophthalmology", "Cardiology"];
 export const experience = ["1-5years", "5+years"];
+
+//  graph icon
+import icon1 from "./assets/graph-01.png";
+import icon2 from "./assets/graph-02.png";
+import icon3 from "./assets/graph-03.png";
+import icon4 from "./assets/graph-04.png";
+export const patientGraphData = [
+  {
+    img: icon1,
+    title: "BMI Status",
+    color: "#7289DE",
+  },
+  {
+    img: icon2,
+    title: "Heart Rate Status",
+    color: "#ffa69e",
+  },
+  {
+    img: icon3,
+    title: "FBC Status",
+    color: "#a9d4ff",
+  },
+  {
+    img: icon4,
+    title: "Weight Status",
+    color: "#ffb88e",
+  },
+];
 
 //  deals
 // import dealsImage1 from "@/public/assets/pharmacy/deals-01.png";

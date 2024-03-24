@@ -6,7 +6,6 @@ export default function ScheduleModal({ open, control }) {
   const [inputFields, setInputFields] = useState([
     { startTime: "", endTime: "" },
   ]);
-  console.log(inputFields);
 
   const handleAddField = (e) => {
     e.preventDefault();

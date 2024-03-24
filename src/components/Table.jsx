@@ -1,4 +1,4 @@
-import icon from "../assets/icon-01.png";
+import icon from "../assets/doctor-thumb-02.jpg";
 export default function Table({ control }) {
   return (
     <>
@@ -7,8 +7,8 @@ export default function Table({ control }) {
           scope="row"
           className="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white flex gap-4 items-center"
         >
-          <div className="w-14 h-14   rounded-full border flex items-center justify-center">
-            <img src={icon} width={30} height={30} alt="icon" />
+          <div className="w-14 h-14   rounded-full border overflow-hidden flex items-center justify-center">
+            <img src={icon} alt="icon" />
           </div>
           <div>
             <h1 className="text-gray-700">Daren </h1>

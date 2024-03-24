@@ -53,17 +53,18 @@ export default function DoctorListCard({ indicator }) {
           </div>
           {!indicator && (
             <div className="flex gap-2 py-4 text-gray-600 ">
-              <button className="border p-2 rounded transition delay-200  hover:bg-red-400 hover:text-white">
-                icon
-              </button>{" "}
-              <button className="border p-2 rounded transition delay-200  hover:bg-red-400 hover:text-white">
-                icon
-              </button>{" "}
-              <button className="border p-2 rounded transition delay-200  hover:bg-red-400 hover:text-white">
-                icon
-              </button>{" "}
-              <button className="border p-2 rounded transition delay-200  hover:bg-red-400 hover:text-white">
-                icon
+              <button className="relative flex h-[40px] w-10 items-center justify-center overflow-hidden bg-blue-600 font-medium text-white shadow-2xl transition-all duration-300 before:absolute before:inset-0 before:border-0 before:border-gray-200 before:duration-200 before:ease-linear hover:bg-white hover:text-blue-600 hover:shadow-blue-600 hover:before:border-[25px] ">
+                <i className=" relative z-10  ri-bookmark-line"></i>
+              </button>
+              <button className="relative flex h-[40px] w-10 items-center justify-center overflow-hidden bg-blue-600 font-medium text-white shadow-2xl transition-all duration-300 before:absolute before:inset-0 before:border-0 before:border-gray-200 before:duration-200 before:ease-linear hover:bg-white hover:text-blue-600 hover:shadow-blue-600 hover:before:border-[25px] ">
+                <i className=" relative z-10  ri-chat-2-line"></i>
+              </button>
+              <button className="relative flex h-[40px] w-10 items-center justify-center overflow-hidden bg-blue-600 font-medium text-white shadow-2xl transition-all duration-300 before:absolute before:inset-0 before:border-0 before:border-gray-200 before:duration-200 before:ease-linear hover:bg-white hover:text-blue-600 hover:shadow-blue-600 hover:before:border-[25px] ">
+                <i className=" relative z-10  ri-phone-fill"></i>
+              </button>
+
+              <button className="relative flex h-[40px] w-10 items-center justify-center overflow-hidden bg-blue-600 font-medium text-white shadow-2xl transition-all duration-300 before:absolute before:inset-0 before:border-0 before:border-gray-200 before:duration-200 before:ease-linear hover:bg-white hover:text-blue-600 hover:shadow-blue-600 hover:before:border-[25px] ">
+                <i className=" relative z-10 ri-vidicon-fill "></i>
               </button>
             </div>
           )}
